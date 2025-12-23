@@ -1,0 +1,142 @@
+{
+  "description" : "All Documents",
+  "count" : 10000,
+  "total_pages" : 50,
+  "next_page_url" : "https://www.federalregister.gov/api/v1/documents?format=json&page=2&per_page=5",
+  "results" : [ {
+    "title" : "In the Matter of: Arthur Ching-Fu Gau, 8802 South Feliz Drive, Tempe, AZ 85284; Order Denying Export Privileges",
+    "type" : "Notice",
+    "abstract" : null,
+    "document_number" : "2025-23123",
+    "html_url" : "https://www.federalregister.gov/documents/2025/12/17/2025-23123/in-the-matter-of-arthur-ching-fu-gau-8802-south-feliz-drive-tempe-az-85284-order-denying-export",
+    "pdf_url" : "https://www.govinfo.gov/content/pkg/FR-2025-12-17/pdf/2025-23123.pdf",
+    "public_inspection_pdf_url" : "https://public-inspection.federalregister.gov/2025-23123.pdf?1765892725",
+    "publication_date" : "2025-12-17",
+    "agencies" : [ {
+      "raw_name" : "DEPARTMENT OF COMMERCE",
+      "name" : "Commerce Department",
+      "id" : 54,
+      "url" : "https://www.federalregister.gov/agencies/commerce-department",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/54",
+      "parent_id" : null,
+      "slug" : "commerce-department"
+    }, {
+      "raw_name" : "Bureau of Industry and Security",
+      "name" : "Industry and Security Bureau",
+      "id" : 241,
+      "url" : "https://www.federalregister.gov/agencies/industry-and-security-bureau",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/241",
+      "parent_id" : 54,
+      "slug" : "industry-and-security-bureau"
+    } ],
+    "excerpts" : null
+  }, {
+    "title" : "Order Denying Export Privileges",
+    "type" : "Notice",
+    "abstract" : null,
+    "document_number" : "2025-23122",
+    "html_url" : "https://www.federalregister.gov/documents/2025/12/17/2025-23122/order-denying-export-privileges",
+    "pdf_url" : "https://www.govinfo.gov/content/pkg/FR-2025-12-17/pdf/2025-23122.pdf",
+    "public_inspection_pdf_url" : "https://public-inspection.federalregister.gov/2025-23122.pdf?1765892725",
+    "publication_date" : "2025-12-17",
+    "agencies" : [ {
+      "raw_name" : "DEPARTMENT OF COMMERCE",
+      "name" : "Commerce Department",
+      "id" : 54,
+      "url" : "https://www.federalregister.gov/agencies/commerce-department",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/54",
+      "parent_id" : null,
+      "slug" : "commerce-department"
+    }, {
+      "raw_name" : "Bureau of Industry and Security",
+      "name" : "Industry and Security Bureau",
+      "id" : 241,
+      "url" : "https://www.federalregister.gov/agencies/industry-and-security-bureau",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/241",
+      "parent_id" : 54,
+      "slug" : "industry-and-security-bureau"
+    } ],
+    "excerpts" : null
+  }, {
+    "title" : "In the Matter of Marco Antonio Santillan Valencia, 12904 Foxley Drive, Whittier, CA 90602; Order Denying Export Privileges",
+    "type" : "Notice",
+    "abstract" : null,
+    "document_number" : "2025-23118",
+    "html_url" : "https://www.federalregister.gov/documents/2025/12/17/2025-23118/in-the-matter-of-marco-antonio-santillan-valencia-12904-foxley-drive-whittier-ca-90602-order-denying",
+    "pdf_url" : "https://www.govinfo.gov/content/pkg/FR-2025-12-17/pdf/2025-23118.pdf",
+    "public_inspection_pdf_url" : "https://public-inspection.federalregister.gov/2025-23118.pdf?1765892724",
+    "publication_date" : "2025-12-17",
+    "agencies" : [ {
+      "raw_name" : "DEPARTMENT OF COMMERCE",
+      "name" : "Commerce Department",
+      "id" : 54,
+      "url" : "https://www.federalregister.gov/agencies/commerce-department",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/54",
+      "parent_id" : null,
+      "slug" : "commerce-department"
+    }, {
+      "raw_name" : "Bureau of Industry and Security",
+      "name" : "Industry and Security Bureau",
+      "id" : 241,
+      "url" : "https://www.federalregister.gov/agencies/industry-and-security-bureau",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/241",
+      "parent_id" : 54,
+      "slug" : "industry-and-security-bureau"
+    } ],
+    "excerpts" : null
+  }, {
+    "title" : "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Title: Countermeasures Injury Compensation Program-OMB No. 0915-0334-Revision",
+    "type" : "Notice",
+    "abstract" : "In compliance with the requirement of the Paperwork Reduction Act of 1995 for opportunity for public comment on proposed data collection projects, HRSA announces plans to submit an Information Collection Request (ICR), described below, to the Office of Management and Budget (OMB). Before submitting the ICR to OMB, HRSA seeks comments from the public regarding the burden estimate below or any other aspect of the ICR.",
+    "document_number" : "2025-23043",
+    "html_url" : "https://www.federalregister.gov/documents/2025/12/17/2025-23043/agency-information-collection-activities-proposed-collection-public-comment-request-information",
+    "pdf_url" : "https://www.govinfo.gov/content/pkg/FR-2025-12-17/pdf/2025-23043.pdf",
+    "public_inspection_pdf_url" : "https://public-inspection.federalregister.gov/2025-23043.pdf?1765892715",
+    "publication_date" : "2025-12-17",
+    "agencies" : [ {
+      "raw_name" : "DEPARTMENT OF HEALTH AND HUMAN SERVICES",
+      "name" : "Health and Human Services Department",
+      "id" : 221,
+      "url" : "https://www.federalregister.gov/agencies/health-and-human-services-department",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/221",
+      "parent_id" : null,
+      "slug" : "health-and-human-services-department"
+    }, {
+      "raw_name" : "Health Resources and Services Administration",
+      "name" : "Health Resources and Services Administration",
+      "id" : 222,
+      "url" : "https://www.federalregister.gov/agencies/health-resources-and-services-administration",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/222",
+      "parent_id" : 221,
+      "slug" : "health-resources-and-services-administration"
+    } ],
+    "excerpts" : "In compliance with the requirement of the Paperwork Reduction Act of 1995 for opportunity for public comment on proposed data collection projects, HRSA announces plans to submit an Information Collection Request (ICR), described below, to the Office of..."
+  }, {
+    "title" : "Invitation To Participate; Coal Exploration License Application COCO106747627, Rio Blanco County, CO",
+    "type" : "Notice",
+    "abstract" : "Pursuant to the Mineral Leasing Act of 1920, as amended by the Federal Coal Leasing Amendments Act of 1976, and the Department of the Interior's regulations, all interested, qualified parties are hereby invited to participate with Blue Mountain Energy, Inc., on a pro rata cost-sharing basis, in this program for the exploration of coal deposits owned by the United States of America in Rio Blanco County, Colorado.",
+    "document_number" : "2025-23141",
+    "html_url" : "https://www.federalregister.gov/documents/2025/12/17/2025-23141/invitation-to-participate-coal-exploration-license-application-coco106747627-rio-blanco-county-co",
+    "pdf_url" : "https://www.govinfo.gov/content/pkg/FR-2025-12-17/pdf/2025-23141.pdf",
+    "public_inspection_pdf_url" : "https://public-inspection.federalregister.gov/2025-23141.pdf?1765892727",
+    "publication_date" : "2025-12-17",
+    "agencies" : [ {
+      "raw_name" : "DEPARTMENT OF THE INTERIOR",
+      "name" : "Interior Department",
+      "id" : 253,
+      "url" : "https://www.federalregister.gov/agencies/interior-department",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/253",
+      "parent_id" : null,
+      "slug" : "interior-department"
+    }, {
+      "raw_name" : "Bureau of Land Management",
+      "name" : "Land Management Bureau",
+      "id" : 275,
+      "url" : "https://www.federalregister.gov/agencies/land-management-bureau",
+      "json_url" : "https://www.federalregister.gov/api/v1/agencies/275",
+      "parent_id" : 253,
+      "slug" : "land-management-bureau"
+    } ],
+    "excerpts" : "Pursuant to the Mineral Leasing Act of 1920, as amended by the Federal Coal Leasing Amendments Act of 1976, and the Department of the Interior's regulations, all interested, qualified parties are hereby invited to participate with Blue Mountain Energy,..."
+  } ]
+}

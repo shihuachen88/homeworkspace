@@ -1,0 +1,111 @@
+//=========== PostgreSQL Schema ===========
+// db name: ecfr
+// STEP 1.
+CREATE TABLE federal_register_raw (
+    id SERIAL PRIMARY KEY,
+    data JSONB
+);
+
+// STEP 2. loading from file "gov_api_data.json"
+\copy federal_register_raw(data) FROM 'gov_api_data.json'
+
+// Query example:
+SELECT
+    doc->>'document_number',
+    doc->>'title'
+FROM federal_register_raw,
+     jsonb_array_elements(data->'results') doc;
+
+CREATE TABLE ecfr_documents (
+    id SERIAL PRIMARY KEY,
+    title INT,
+    agency TEXT,
+    effective_date DATE,
+    content TEXT,
+    checksum TEXT,
+    created_at TIMESTAMP DEFAULT now()
+);
+
+CREATE INDEX idx_agency ON ecfr_documents(agency);
+
+//=========== Word Count Per Agency ============
+
+CREATE OR REPLACE FUNCTION word_count_per_agency()
+RETURNS TABLE (
+    agency TEXT,
+    word_count BIGINT
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT
+        agency,
+        SUM(array_length(regexp_split_to_array(content, '\s+'), 1))
+    FROM ecfr_documents
+    GROUP BY agency;
+END;
+$$ LANGUAGE plpgsql;
+
+//=============== Historical Change Over Time ===========
+CREATE OR REPLACE FUNCTION change_over_time(p_agency TEXT)
+RETURNS TABLE (
+    effective_date DATE,
+    document_size INT
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT
+        effective_date,
+        length(content)
+    FROM ecfr_documents
+    WHERE agency = p_agency
+    ORDER BY effective_date;
+END;
+$$ LANGUAGE plpgsql;
+
+//================= Checksum Per Agency ==============
+CREATE OR REPLACE FUNCTION agency_checksums()
+RETURNS TABLE (
+    agency TEXT,
+    checksum TEXT
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT agency, md5(string_agg(content, ''))
+    FROM ecfr_documents
+    GROUP BY agency;
+END;
+$$ LANGUAGE plpgsql;
+
+//================ Custom Metric (Added Value) ===============
+// 🔍 Regulatory Volatility Index (RVI) (Custom Metric)
+
+//Why it matters:
+//Agencies with frequent & large content changes imply higher compliance risk.
+
+//Definition
+//RVI = AVG(ABS(size(t) - size(t-1)))
+
+CREATE OR REPLACE FUNCTION regulatory_volatility()
+RETURNS TABLE (
+    agency TEXT,
+    volatility_score NUMERIC
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH sizes AS (
+        SELECT
+            agency,
+            effective_date,
+            length(content) AS size,
+            LAG(length(content)) OVER
+              (PARTITION BY agency ORDER BY effective_date) AS prev_size
+        FROM ecfr_documents
+    )
+    SELECT
+        agency,
+        AVG(ABS(size - prev_size))
+    FROM sizes
+    WHERE prev_size IS NOT NULL
+    GROUP BY agency;
+END;
+$$ LANGUAGE plpgsql;
