@@ -1,5 +1,5 @@
 # Assess
-Doge Assessment submitted on DEc.19, 2025
+Doge Assessment submitted on Dec.19, 2025
 
 Note:
 1. Language: Java
