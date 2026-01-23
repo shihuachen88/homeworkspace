@@ -1,0 +1,6 @@
+Purpose: The United States Federal Government has over ~200,000 pages of federal regulations across ~150 main agencies, all of which can be found within eCFR at https://www.ecfr.gov/. There is a public API for it.
+The goal of this assessment is to create a simple website to analyze Federal Regulations to allow for more digestible and actionable insights to be made on potential deregulation efforts across the government.
+Instructions: Write code to download the current eCFR data, store the data at server-side with PostgreSQL database, create APIs that can retrieve the server-side stored data with help of Apache Tomcat as the Web server, and provide a UI to analyze it for items such as word count per agency, historical changes over time, and a checksum for each agency.
+Notes: Only important analysis that would provide meaningful information to the user.
+Please add at least one of your own custom metrics that you may help inform decision-making more effectively.
+There should be a way for users to review the results.
